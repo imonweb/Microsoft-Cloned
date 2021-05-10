@@ -8,3 +8,9 @@ library.add(fas, far, fab)
 dom.i2svg()
 
 import '../src/css/styles.css';
+
+let btn = document.querySelector('.main-menu');
+document.querySelector('.hamburger-menu-btn').addEventListener('click', () => {
+  // console.log(btn);
+  btn.classList.toggle('show');
+});
